@@ -1,0 +1,184 @@
+/* ======== BASE ======== */
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url('/assets/fundo\ linktree.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ======== CONTAINER ======== */
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ======== HEADER ======== */
+header {
+  padding: 40px 0 20px;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+h1 span {
+  color: white; /* azul destaque */
+}
+
+header p {
+  font-size: 14px;
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+
+/* ======== ÍCONES ======== */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* ======== TÍTULO DA SEÇÃO ======== */
+.section-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+/* ======== BANNER ======== */
+.portfolio-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-banner a {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-banner a:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-banner img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* ======== LINKS ======== */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  border-radius: 40px;
+  padding: 12px 20px;
+  font-weight: 700;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.links a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+.links a div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.links .title {
+  font-size: 16px;
+}
+
+.links .subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ======== GRADIENTES ======== */
+.links a.whatsapp { background: linear-gradient(90deg, #2563eb, #3b82f6); }
+.links a.website { background: linear-gradient(90deg, #2563eb, #3b82f6); }
+.links a.github { background: linear-gradient(90deg, #2563eb, #3b82f6); }
+.links a.instagram { background: linear-gradient(90deg, #2563eb, #3b82f6); }
+
+/* Hover */
+.links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 420px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .links a img {
+    width: 24px;
+    height: 24px;
+  }
+  .links .title {
+    font-size: 15px;
+  }
+}
